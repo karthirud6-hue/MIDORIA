@@ -68,14 +68,6 @@ MIDORIA then:
 6. Assigns a sustainability quest
 
 ---
-## 📸 Screenshots
-
-### Home Page
-![Home](screenshots/home.png)
-
-### Royal Environmental Report
-![Report](screenshots/report1.png)
-![Report](screenshots/report2.png)
 
 ## 🚀 Future Enhancements
 
