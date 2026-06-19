@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDORIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>🌿 MIDORIA 👑</h1>
+        <p>Where every choice grows a greener kingdom.</p>
+        <p class="welcome">
+    Welcome, Citizen of Midoria. Discover your environmental impact and help the kingdom flourish.
+</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Citizen Assessment</h2>
+
+            <label>Transportation</label>
+            <select id="transport">
+                <option value="car">Car</option>
+                <option value="public">Public Transport</option>
+                <option value="bike">Bike</option>
+                <option value="walk">Walk</option>
+            </select>
+
+            <label>Daily Distance (km)</label>
+            <input type="number" id="distance" placeholder="Enter distance">
+
+            <label>Monthly Electricity Usage (kWh)</label>
+            <input type="number" id="electricity" placeholder="Enter kWh">
+
+            <label>Diet Type</label>
+            <select id="diet">
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="mixed">Mixed</option>
+                <option value="meat">Heavy Meat</option>
+            </select>
+
+            <label>Water Usage</label>
+            <select id="water">
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select>
+
+            <button onclick="generateReport()">
+                🌱 Generate My Midoria Report
+            </button>
+        </section>
+
+
+
+        <section class="card results" id="results">
+            <h2>📜 Royal Environmental Report</h2>
+             <p class="report-subtitle">
+    Issued by the Kingdom of Midoria and Haruka's Environmental Council
+</p>
+
+            <p><strong>🌍 Carbon Footprint:</strong>
+                <span id="carbonFootprint">--</span>
+            </p>
+
+
+            <div class="health-card">
+    <h3>👑 MIDORIA HEALTH</h3>
+
+    <div class="health-score" id="healthScore">
+        --
+    </div>
+
+    <div class="health-status" id="kingdomStatus">
+        --
+    </div>
+</div>
+           <div class="evaluation-box">
+    <h3>📜 Kingdom Evaluation</h3>
+    <p id="evaluationText">
+        Awaiting assessment...
+    </p>
+</div>
+
+            <p><strong>🌿 Kingdom Status:</strong>
+                <span id="kingdomStatus">--</span>
+            </p>
+
+            <h3>📊 Impact Breakdown</h3>
+
+           <p>🚗 Transport: <span id="transportPercent">--</span></p>
+           <p>⚡ Electricity: <span id="electricityPercent">--</span></p>
+           <p>🍽 Diet: <span id="dietPercent">--</span></p>
+           <p>💧 Water: <span id="waterPercent">--</span></p>
+
+            <div class="chart-box">
+    <h3>📊 Kingdom Impact Visualization</h3>
+    <canvas id="impactChart"></canvas>
+</div>
+
+            <div class="haruka-box">
+    <h3>🤖 Haruka's Guidance</h3>
+    <p id="guidance">
+        Awaiting assessment...
+    </p>
+</div>
+
+            <div class="quest-box">
+    <h3>🌱 Kingdom Quest</h3>
+    <p id="quest">
+        Awaiting assignment...
+    </p>
+</div>
+        </section>
+
+    </main>
+
+     <footer>
+    <p>
+        MIDORIA • Built by RUDHRA KARTHIKEYAN 🌿👑
+    </p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
